@@ -1,0 +1,95 @@
+
+
+body{
+    margin: 0;
+}
+/* BARRA DE NAVEGAÇÃO */
+#menu ul{
+    display: flex;
+    list-style: none;
+    gap: 20px; /*espaço para cada item */
+    margin: 0;
+    justify-content: center;
+    padding-top: 20px;  
+    background-color: aliceblue;
+}
+
+#menu li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    font-size: 15px;
+}
+
+#menu li a:hover{
+    color: white;
+    border-radius: 20px;
+}
+
+/* SOBRE MIM */
+
+#sobremim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    width: auto;
+    background-color: aliceblue;
+}
+
+.conteudo{
+    display: flex; /* Coloca os dois lados (texto e imagem) lado a lado */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    gap: 40px; /* Espaçamento entre os dois blocos */
+    max-width: 1000px; 
+    margin: 0 auto; /* Centraliza o conteúdo na tela */
+    padding: 40px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+}
+
+.texto h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.texto p{
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.redessociais ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.redessociais a{
+    width: 30px;
+    height: 25px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: flex;   
+}
+
+
+
+.imagem img{
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-left: 40px;
+    border-radius: 100%;
+}
