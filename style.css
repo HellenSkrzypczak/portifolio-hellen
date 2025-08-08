@@ -1,7 +1,10 @@
 
-
 body{
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
 }
 /* BARRA DE NAVEGAÇÃO */
 #menu ul{
@@ -10,10 +13,9 @@ body{
     gap: 20px; /*espaço para cada item */
     margin: 0;
     justify-content: center;
-    padding-top: 20px;  
-    background-color: aliceblue;
+    align-items: center;
+    padding-top: 20px;
 }
-
 #menu li a{
     text-decoration: none;
     color: black;
@@ -22,23 +24,19 @@ body{
     transition: background-color 0.3s;
     font-size: 15px;
 }
-
 #menu li a:hover{
     color: white;
     border-radius: 20px;
 }
 
 /* SOBRE MIM */
-
 #sobremim{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 60px 20px;
     width: auto;
-    background-color: aliceblue;
 }
-
 .conteudo{
     display: flex; /* Coloca os dois lados (texto e imagem) lado a lado */
     justify-content: center; /* Centraliza horizontalmente */
@@ -48,25 +46,21 @@ body{
     margin: 0 auto; /* Centraliza o conteúdo na tela */
     padding: 40px;
 }
-
 .texto {
     display: flex;
     flex-direction: column;
     min-width: 500px;
 }
-
 .texto h2{
     font-size: 32px;
     margin-bottom: 20px;
 }
-
 .texto p{
     font-size: 18px;
     line-height: 1.6;
     text-align: justify;
     margin-bottom: 20px;
 }
-
 .redessociais ul{
     list-style: none;
     display: flex;
@@ -74,7 +68,6 @@ body{
     padding: 0;
     flex-wrap: wrap;
 }
-
 .redessociais a{
     width: 30px;
     height: 25px;
@@ -92,4 +85,142 @@ body{
     object-fit: cover;
     margin-left: 40px;
     border-radius: 100%;
+}
+
+/*HABILIDADES*/
+#habilidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dad8d8;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.texto-habilidade{
+   justify-items: center; 
+   padding: 10px;;
+}
+
+h2{
+    font-size: 32px;
+}
+p{
+    font-size: 20px;
+}
+.grid-habilidades{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+    gap: 20px;
+    justify-items: center; /* centraliza conteúdo de cada célula */
+    margin: 50px 0;
+}
+.habilidade{
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparente */
+    backdrop-filter: blur(10px); /* Desfoque */
+    -webkit-backdrop-filter: blur(10px); /* Suporte Safari */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borda levemente visível */
+}
+.habilidade:hover{
+    background-color: #ffffff;
+}
+.habilidade span{
+    justify-content: center;
+    display: grid;
+}
+
+/*PROJETOS*/
+#projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 1000px;
+}
+.grid-projetos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+    padding-top: 20px;
+    align-items: center;
+}
+.projeto{
+    text-align: center;
+    height: 250px;
+    width: 200px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/*CONTATOS*/
+#contatos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #dad8d8;
+    width: 1000px;
+    height: auto;
+}
+.texto-contatos{
+    text-align: left;
+    padding-left: 60px;
+    padding-top: 20px;
+}
+/******/
+.grid-contatos{
+    display: grid;
+    display: grid;
+    flex-wrap: wrap;
+}
+.contato{
+    display: flex;
+    padding: 20px;
+    padding-left: 60px;
+    flex-direction: column; /* coloca conteúdo em coluna */
+    align-items: flex-start; /* alinha à esquerda */
+    background-color: #555;
+    
+}
+
+.linhatopo {
+  display: flex;
+  align-items: center; /* ícone e título na mesma linha */
+  gap: 8px;
+  background-color: #ffffff;
+}
+
+
+.contato p{
+  margin-top: 5px; /* espaço entre título e marcador */
+  font-size: 0.9rem;
+  color: #555;
+  background-color: antiquewhite;
+  
+}
+.contato img{
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 0;
+}
+footer p{
+    font-size: 14px;
 }
